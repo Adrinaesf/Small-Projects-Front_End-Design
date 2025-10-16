@@ -12,6 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
     <style>
+      .PROJECTS-CONTAINER {
+        display: flex;
+        justify-content: center; /* centers the projects horizontally */
+        align-items: flex-start; /* keeps them aligned at the top */
+        gap: 50px; /* space between cards */
+        flex-wrap: wrap; /* allows wrapping on smaller screens */
+        margin-top: 50px;
+        margin-left: 90px;
+      }
+
       .header {
         font-family: "Nunito Sans", sans-serif;
         display: block;
@@ -19,20 +29,37 @@
         margin-top: 100px;
       }
       
-      .DRP{
+      .PROJECTS {
+        align-items: top;
+        height: 536px;
         width: 270px;
         background-color: rgb(255, 255, 255);
         display: inline-block;
-        margin-left: 50px;
+        margin-left: 65px;
         box-shadow: 2px 5px 12px rgb(96, 95, 95);
-        border-radius: 4%;
+        border-radius: 10px;
         text-align: center; 
         transition: all 0.18s;
+        margin: 0; /* remove this line if you had margin-left */
       }
       .Math_pic {
         width: 270px;
-        border-radius: 4%;
+        border-radius: 10px;
       }
+      .game_pic{
+        width: 270px;
+        height: 370px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+      .wix_pic {
+        width: 270px;
+        height: 370px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+
       .Project_name{
         font-family: "Nunito Sans", sans-serif;
         font-size: 20px;
@@ -67,10 +94,9 @@
         opacity: 0.8;
       }
 
-      .DRP:hover {
+      .PROJECTS:hover {
         box-shadow: 3px 10px 10px rgb(65, 65, 65);
       }
-
 
     </style>
 
@@ -80,15 +106,57 @@
   <body> 
     <h1 class="header"> Small Projects That I have Done</h1>
 
-    <div class="Projects"> 
+    <div class="PROJECTS-CONTAINER"> 
 
-      <div class="DRP"> 
+      <div class="PROJECTS"> 
         <div class="image"> 
           <img class="Math_pic" src="math.jpg">
         </div>
           <h5 class="Project_name"> DRP Project </h5>
           <p class="DRP_detail_txt"> 
             Applications of Algebraic Geomatry with SageMath
+          </p>
+      
+        <div>
+          <button class="Button"> Read More </button>
+        </div>
+      </div>
+
+      <div class="PROJECTS"> 
+        <div class="image"> 
+          <img class="game_pic" src="6552d063202535551b9d3b80b8ccf3aa.jpg">
+        </div>
+          <h5 class="Project_name"> Video Game </h5>
+          <p class="DRP_detail_txt"> 
+            Video Game with Java
+          </p>
+      
+        <div>
+          <button class="Button"> Read More </button>
+        </div>
+      </div>
+
+      <div class="PROJECTS"> 
+        <div class="image"> 
+          <img class="Math_pic" src="78c7ca1cebdff8111ed3b341c0bdeb2d.jpg">
+        </div>
+          <h5 class="Project_name"> Calculator </h5>
+          <p class="DRP_detail_txt"> 
+            Solve Problems with Calaulator
+          </p>
+      
+        <div>
+          <button class="Button"> Read More </button>
+        </div>
+      </div>
+
+      <div class="PROJECTS"> 
+        <div class="image"> 
+          <img class="wix_pic" src="a7c98d758c658ac9d287147b00411b72.jpg">
+        </div>
+          <h5 class="Project_name"> Wix Project </h5>
+          <p class="DRP_detail_txt"> 
+            Financial Website with Wix
           </p>
       
         <div>
