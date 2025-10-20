@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <title> Flexbox Practice </title>
+    <style> 
+      .projects {
+        display: flex;
+        justify-content: center; /* align horizontally */
+        align-items: flex-start; /* align vertically */
+        gap: 30px;
+        margin-bottom: 20px;
+      }
+      /* This is a flex box, so if you add elements, then it changes
+       it maintains alignments either way */
+      
+       .page {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "sidebar main"
+          "footer footer";
+        grid-template-columns: 1fr 3fr; /* sidebar smaller than main */
+        grid-gap: 20px;
+      }
+      
+    </style>
+
+  </head>
+  <body>
+    <div class="projects">
+      <div style="background-color: lightblue;" class="card">Math</div>
+      <div style="background-color: lightpink;" class="card">Game</div>
+      <div style="background-color: lightblue;" class="card">Wix</div>
+    </div>
+
+    <div class="page">
+      <header style="background-color: lightblue;">Header</header>
+      <aside style="background-color: lightpink;"> Sidebar</aside>
+      <main style="background-color: lightblue;"> Main content</main>
+      <footer style="background-color: lightpink;">Footer</footer>
+    </div>
+  </body>
+
+
+
+
+
+
+
+
+</html>

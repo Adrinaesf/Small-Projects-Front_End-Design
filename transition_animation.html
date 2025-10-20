@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Animations </title>
+    <style>
+      .btn{
+        background-color: lightpink;
+        color: rgb(219, 37, 67);
+        border:solid;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 100px;
+        margin-left: 100px;
+        border-color: rgb(219, 37, 67);
+        margin-bottom: 500px;
+
+
+        transition-property: transform;
+        transition-duration: 0.7s;
+        transition-timing-function: ease;
+        transition-delay: 0;
+      }
+
+      .btn:hover {
+        transform: translateY(-10px);
+      }
+
+      .txt {
+        margin-top: 300px;
+        animation: slideInLeft 3s ease 0s 1;
+      }
+
+      @keyframes slideInLeft {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(100px);
+        }
+      }
+
+
+
+
+    </style>
+
+
+
+
+
+  </head>
+
+
+
+
+  <body>
+    <button class="btn"> Learn More </button>
+    <h1 class="txt"> Hello World! </h1>
+  </body>
+</html>
