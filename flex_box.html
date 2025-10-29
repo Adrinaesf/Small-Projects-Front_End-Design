@@ -11,10 +11,22 @@
         align-items: flex-start; /* align vertically */
         gap: 30px;
         margin-bottom: 20px;
+        width: 0; /* makes it shrik */
+        max-width: 100px;
+        flex-shrink: 0; /* Makes it not shring life top left of header in youtube*/
       }
       /* This is a flex box, so if you add elements, then it changes
        it maintains alignments either way */
       
+      .card1 {
+        flex: 2;
+      }
+
+      .card2 {
+        flex: 1;
+      }
+
+
        .page {
         display: grid;
         grid-template-areas:
@@ -30,9 +42,9 @@
   </head>
   <body>
     <div class="projects">
-      <div style="background-color: lightblue;" class="card">Math</div>
-      <div style="background-color: lightpink;" class="card">Game</div>
-      <div style="background-color: lightblue;" class="card">Wix</div>
+      <div style="background-color: lightblue;" class="card2">Math</div>
+      <div style="background-color: lightpink;" class="card1">Game</div>
+      <div style="background-color: lightblue;" class="card2">Wix</div>
     </div>
 
     <div class="page">
@@ -44,7 +56,24 @@
   </body>
 
 
+<!-- 
+  Flexbox: 
+  - You apply it to the container => display = flex
+  - Then if you want fr, you say flex = 1, 2, ...
+  - With Flexbox you can give space between your elements with equal amount:
+    => justifu-content = space-between
 
+  - You can align elements: align-items: center or strech or ....
+  
+  Nested Flexbox: 
+  - Div inside a flex box(the container) in not flex them selves
+  - So you can't really use align-items center
+  - so checnge that div to a flex box
+
+
+
+
+-->
 
 
 
