@@ -1,0 +1,63 @@
+<!-- 
+  Positions:
+  - Static: Default mode
+  - Fixed: Stick an element to the top while we scroll
+  Ex: Headers
+  - when we set position to fixed, then the element becomes inline-block element
+  - it doesn't take space of a complete line
+
+
+
+
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Postion Practice </title>
+    <style>
+      .header{
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 0px; /* How far away is our element from the top of the window */
+        left: 0px; /* How far away is our element from the left of the window so when it's zero then it touches the window */
+        right: 0px;
+        height: 50px; 
+
+        /*
+          With top, left, right and bottom, when we resizze the page, the elemnt also will be resized
+          But with heghit or width it always be that size no matter what
+        */
+      }
+      .div1{
+        background-color: lightblue;
+        height: 200px;
+        width: 200px;
+        position: static;
+      }
+
+      .div2{
+        background-color: lightpink;
+        height: 200px;
+        width: 200px;
+      }
+    </style>
+  </head>
+
+
+  <body style="
+    height: 3000px;
+    padding-top: 60px;
+  ">
+    <div class="header"> Header </div>
+    <div class="div1"> Div 1 </div>
+    <div class="div2"> Div 2 </div>
+  </body>
+
+
+</html>
